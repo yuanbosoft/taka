@@ -10,6 +10,7 @@ public class Test {
 		ActorRef actorRef=system.actorOf(Props.create(TakaActor.class),"taka");
 		System.out.println("actorRef:"+actorRef.path());
 		actorRef.tell("abcdef", null);
-		
+		system.stop(actorRef);
+		system.terminate();
 	}
 }
