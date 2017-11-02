@@ -1,4 +1,4 @@
-package com.tiandetech.tdng.akka;
+package com.tiandetech.takka.old;
 
 import akka.actor.UntypedActor;
 
